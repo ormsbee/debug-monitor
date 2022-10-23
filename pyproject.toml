@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "debug-monitor"
+version = "0.1.0"
+description = "Server and TUI for debugging web applications."
+authors = ["David Ormsbee <ormsbee@gmail.com>"]
+license = "Apache"
+readme = "README.md"
+packages = [{include = "debug_monitor"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyzmq = "^24.0.1"
+textual = {extras = ["dev"], version = "^0.2"}
+click = "^8.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1.3"
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^5.3.0"
+
+
+[tool.poetry.scripts]
+debug-monitor = 'debug_monitor.console:run'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

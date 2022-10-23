@@ -1,0 +1,53 @@
+Screen {
+    layout: vertical;
+}
+
+#request_nav {
+    width: 100%;
+    height: 30%;
+    dock: top;
+}
+
+#request_table {
+    width: 100%;
+    min-height: 7; /* force at least six lines to appear */
+    height: 30%;
+    display: block;
+    overflow-x: hidden;
+/*    dock: top; */
+    padding-bottom: 1;
+}
+
+#request_log {
+    width: 100%;
+    min-height: 7; /* force at least six lines to appear */
+    display: block;
+    overflow-x: hidden;
+    /* dock: top; */
+    padding-bottom: 1;
+}
+
+/*
+#panel_tabs {
+    height: 40%;
+    dock: left;
+}
+*/
+
+
+#button_panel {
+    max-width: 17;
+    dock: left;
+}
+
+/*
+#button_panel Button {
+    text-align: left;
+}
+*/
+
+#detail_view {
+    dock: bottom;
+    width: 100%;
+    height: 70%;
+}
