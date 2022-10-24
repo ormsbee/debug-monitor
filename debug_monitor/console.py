@@ -1,3 +1,8 @@
+"""
+CLI module for the debug_monitor command.
+
+Handling optional flags and configuration reading (if any) happens here.
+"""
 import click
 
 from .app import DebugMonitorApp

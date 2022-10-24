@@ -1,3 +1,8 @@
+"""
+Textual App that provides our terminal UI.
+
+TODO: Move the zmq stuff entirely out of here.
+"""
 import asyncio
 import json
 

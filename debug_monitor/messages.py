@@ -1,3 +1,9 @@
+"""
+This module is responsible for holding the state of everything we know about the
+servers that are reporting in, the requests/responses, and everything associated
+with them. It does _not_ hold UI state (e.g. "what row is selected"), as that
+will live in the app module.
+"""
 from asyncio import Lock
 from collections import defaultdict
 
