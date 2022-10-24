@@ -4,6 +4,9 @@ from .app import DebugMonitorApp
 
 @click.command()
 def run():
+    """
+    Start debug-monitor service and Terminal UI.
+    """
     app = DebugMonitorApp()
     app.run()
     app.socket.close()
